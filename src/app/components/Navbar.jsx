@@ -40,7 +40,7 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full border h-20 border-[grey] rounded-sm top-0 left-0 right-0 z-10 bg-pink-200 bg-opacity-100">
+    <nav className="fixed w-full border h-20  rounded-sm top-0 left-0 right-0 z-10 bg-pink-200 bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href="/" className="flex items-center text-2xl md:text-5xl text-white font-semibold">
           {/* <img src="/rainbowlogo.jpg" alt="Rainbow School Logo" width={100} height={30} /> */}
