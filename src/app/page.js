@@ -20,7 +20,7 @@ import ImageSlider from '../app/components/Webelief'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col  bg-pink-50">
+    <main className="flex min-h-screen flex-col  bg-white">
       <Navbar />
       <div className="container mt-24   ">
         {/* <HeroSection /> */}
