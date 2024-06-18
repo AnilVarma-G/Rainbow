@@ -20,29 +20,26 @@ import ImageSlider from '../app/components/Webelief'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col  bg-pink-50">
+    <main className="overflow-x-hidden"> 
       <Navbar />
-      <div className="container mt-24   ">
+      <div className="mt-24 container mx-auto bg-red-50 ">
         {/* <HeroSection /> */}
-        <Slider/>
-        <Welcome/>
+        <Slider />
+        <Welcome />
         <ImageSlider />
         <AchievementsSection />
         <AboutSection />
-    
-        <Founder/>
-        <Gallery/>
-        <Facilities/>
-        <ActivitiesComponent/>
+        <Founder />
+        <Gallery />
+        <Facilities />
+        <ActivitiesComponent />
         {/* <ProjectsSection /> */}
-        
-        <FixedIcons/>
-        {/* <VideoList/> */}
-        <FeedbackList/>
+        <FixedIcons />
+        {/* <VideoList /> */}
+        <FeedbackList />
         <EmailSection />
       </div>
       <Footer />
-
     </main>
   );
 }

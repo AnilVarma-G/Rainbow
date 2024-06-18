@@ -1,7 +1,6 @@
 // components/FixedIcons.js
 
 import React from 'react';
-import Link from 'next/link';
 import { AiFillPhone, AiFillInstagram } from 'react-icons/ai';
 import { FaWhatsapp, FaTwitter, FaFacebookF } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
@@ -9,7 +8,7 @@ import { FiYoutube } from 'react-icons/fi';
 
 const FixedIcons = () => {
     return (
-        <div className="fixed right-4 md:right-8 lg:right-12 top-[375px] transform -translate-y-1/2 flex flex-col items-start z-10">
+        <div className="fixed right-4 md:right-8 lg:right-12 top-[480px] lg:top-[375px] transform -translate-y-1/2 flex flex-col items-start z-10">
             {/* Phone icon with Link */}
             <a href="tel:+919908442253" className="bg-blue-500 text-white p-2 rounded-full mb-4 hover:bg-blue-600 transition duration-300">
                 <AiFillPhone size={24} />

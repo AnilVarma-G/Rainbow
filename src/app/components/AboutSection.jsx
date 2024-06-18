@@ -64,7 +64,7 @@ const AboutSection = () => {
         <div className="md:order-2  "  >
       
           <Image src="/printimage.jpeg" width={500} height={800} />
-          <Image src="/banner.jpeg" width={500} height={800} />
+          <Image src="/banner2.jpeg" width={500} height={800} />
         </div>
         <div className="md:order-1">
         
