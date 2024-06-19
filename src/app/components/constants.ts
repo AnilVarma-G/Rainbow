@@ -1,7 +1,7 @@
 export const images = [
     {
       id: 1,
-      src: "/imgsli.jpg",
+      src: "/image5.jpg",
       title: "Rainbow Concept School & Play School",
       head:"PLAYGROUP TO X CLASS",
       desc: "Established by SPR Memorial Educational society in 2007 recognized by Governament of Telangana State. ",
