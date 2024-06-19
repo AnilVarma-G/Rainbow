@@ -57,12 +57,12 @@ const ActivitiesComponent = () => {
         },
         {
             header: "Festival-wise Activities",
-            imageSrc: "/festi.jpg", // Replace with actual image path
+            imageSrc: "/festy.jpeg", // Replace with actual image path
             content: "Festival-wise activities enrich cultural learning and celebrate festive occasions. Students participate in rituals, crafts, and performances, promoting cultural awareness and unity."
         },
         {
             header: "Indoor Play Ground",
-            imageSrc: "/indoor.jpg", // Replace with actual image path
+            imageSrc: "/games1.jpg", // Replace with actual image path
             content: "At Rainbow School, we believe that play is an essential part of learning and development. Our state-of-the-art indoor playground provides a safe, stimulating, and fun environment where children can explore, create, and grow."
         },
         

@@ -1,7 +1,7 @@
 export const images = [
     {
       id: 1,
-      src: "/image5.jpg",
+      src: "/imgsli4.jpg",
       title: "Rainbow Concept School & Play School",
       head:"PLAYGROUP TO X CLASS",
       desc: "Established by SPR Memorial Educational society in 2007 recognized by Governament of Telangana State. ",
@@ -15,21 +15,21 @@ export const images = [
     },
     {
       id: 3,
-      src: "/slider5.jpeg",
+      src: "/image5.jpg",
       title: "Rainbow Concept School & Play School",
       head:"PLAYGROUP TO X CLASS",
       desc: "Established by SPR Memorial Educational society in 2007 recognized Governament of Telangana State. ",
     },
     {
       id: 4,
-      src: "/imgsli4.jpg",
+      src: "/image4.jpg",
       title: "Rainbow Concept School & Play School",
       head:"PLAYGROUP TO X CLASS",
       desc: "Established by SPR Memorial Educational society in 2007 recognized Governament of Telangana State. ",
     },
     {
       id: 5,
-      src: "/image7.jpg",
+      src: "/slider5.jpeg",
       title: "Rainbow Concept School & Play School",
       head:"PLAYGROUP TO X CLASS",
       desc: "Established by SPR Memorial Educational society in 2007 recognized Governament of Telangana State.  ",

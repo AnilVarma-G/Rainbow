@@ -24,35 +24,52 @@ const FeedbackList = () => {
 
   const feedbacks = [
     {
-      text: "Our child has shown remarkable improvement since joining. The teachers are very supportive and nurturing.",
+      text: "Good school for kids as the activity based learning helps the students to understand in a better way through the conceptual things. We are very impressive by the work of Teachers by explaining the concepts in different ways.",
       imageUrl: "/image13.jpg",
-      name: "John Doe",
+      name: "Rajulapati Manusha",
     },
     {
-      text: "I'm impressed by the dedication of the staff. My child feels motivated and enjoys learning here.",
+      text: "Rainbow concept & play school is one of the best school.and study,cultur activies,any programe's conducting very well and my childrens are issue the study ing very good & childrens to teachers very caring any things very naice and thankyou for all stop members . This is my opinion",
       imageUrl: "/image9.jpg",
-      name: "Jane Smith",
+      name: "Mangali Sravani",
     },
     {
-      text: "Great school! The extracurricular activities are fantastic, and my child has made wonderful friends.",
+      text: "I love this school!  My daughter has improved a lot with their practical approach. Thanks a lot to Rainbow Concept School for encouraging our kids to think creatively and helping them succeed in society ❤️",
       imageUrl: "/image12.jpg",
-      name: "Emily Johnson",
+      name: "Mana Little World",
     },
     {
-      text: "The school's environment is safe and welcoming. The academic curriculum is challenging yet engaging.",
+      text: "Im working in this place as Mother teacher for pre primary.This place is best for pre primary sections. Good syllabus pattern, excellent teaching staff. They really take care of every child.",
       imageUrl: "/image6.jpg",
-      name: "Michael Brown",
+      name: "Syeda Shazia",
     },
     {
-      text: "I love the practical approach to learning. The teachers make complex subjects easy to understand.",
+      text: "I'm really pleased with this school. The way they teach spoken English and encourage creative thinking is excellent. The management is great, and the faculty is top-notch. My kids are doing really well, and it makes me happy to see their performance.",
       imageUrl: "/image7.jpg",
-      name: "Jessica Davis",
+      name: "Anand P",
     },
     {
-      text: "The school has provided me with opportunities to explore my interests and grow as an individual.",
+      text: "The management here is excellent, and the faculty is highly qualified. Their focus on spoken English is fantastic. I'm thrilled to see how much my child has improved under their guidance. It makes me really happy.",
       imageUrl: "/image2.jpg",
-      name: "Daniel Wilson",
-    }
+      name: "Sravani T",
+    },
+
+    {
+      text: "I am very happy regarding my kids why because they are good in spoken english and very creative ideas.",
+      imageUrl: "/image2.jpg",
+      name: "Samreen Samreen",
+    },
+    {
+      text: "I'm delighted with my kids' progress because they're excelling in spoken English and coming up with wonderfully creative ideas. It's truly fulfilling to see their growth and development.",
+      imageUrl: "/image2.jpg",
+      name: "Janga Reddy",
+    },
+    {
+      text: "Best school and Excell management.I have 15 years experience in other schools as incharge , I joined this school 1 year back as coordinator. I can proudly say that this school management is Best 👌.. very supportive environment. Works on quality rather than quantity.",
+      imageUrl: "/image2.jpg",
+      name: "MC. SARITHA",
+    },
+
   ];
 
   return (

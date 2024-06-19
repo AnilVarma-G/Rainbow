@@ -35,7 +35,7 @@ export default function Home() {
         <ActivitiesComponent />
         {/* <ProjectsSection /> */}
         <FixedIcons />
-        {/* <VideoList /> */}
+        <VideoList />
         <FeedbackList />
         <EmailSection />
       </div>

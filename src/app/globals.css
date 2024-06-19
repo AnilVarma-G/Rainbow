@@ -213,7 +213,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
-  animation: moveText 5s infinite linear;
+  animation: moveText 3s infinite linear;
 }
 
 @keyframes moveText {

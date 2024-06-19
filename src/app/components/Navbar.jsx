@@ -27,7 +27,7 @@ const navLinks = [
     path: "#Activities",
   },
   {
-    title: "Contactus",
+    title: "Contact Us",
     path: "#Contactus",
   },
   {
@@ -42,11 +42,9 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full border h-20 border-[grey] rounded-sm top-0 left-0 right-0 z-10 bg-pink-200 bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link href="/" className="flex items-center text-2xl md:text-5xl text-white font-semibold">
-          {/* <img src="/rainbowlogo.jpg" alt="Rainbow School Logo" width={100} height={30} /> */}
-          
-          <span className="rainbow-text ml-2">Rainbow School</span>
-        </Link>
+      <Link href="/" className="flex items-center text-2xl md:text-4xl text-white font-semibold">
+         <span className="rainbow-text md:-ml-10 -ml-14">Rainbow Concept School</span>
+         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -80,3 +78,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

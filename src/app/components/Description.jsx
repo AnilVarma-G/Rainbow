@@ -10,29 +10,72 @@ import Image from "next/image";
 const rainbowColors = [
   "#FF0000", // Red
   "#FF7F00", // Orange
-  "#66FF00", // Yellow
+  "#FFFF00", // Yellow
   "#66FF00", // Green
   "#0000FF", // Blue
-  "#EE82EE", // Indigo
+  "#4B0082", // Indigo
   "#EE82EE", // Violet
 ];
 
-const getColoredTitle = (title) => {
+const getColoredTitle = (title, idx, activeImage) => {
   const words = title.split(" ");
-  return words.map((word, index) => (
-    <span
-      key={index}
-      style={{ color: rainbowColors[index % rainbowColors.length] }}
-    >
-      {word}{" "}
-    </span>
-  ));
+  const firstWord = "Rainbow";
+  const remainingWords = words.slice(1);
+
+  const getRandomColor = () => {
+    return rainbowColors[Math.floor(Math.random() * rainbowColors.length)];
+  };
+
+  return (
+    <div className="text-center">
+      <div>
+        {firstWord.split("").map((letter, index) => (
+          <motion.span
+            key={`${idx}-first-${index}`}
+            className={`${
+              idx === activeImage
+                ? "text-[40px] sm:text-[200px] lg:text-[200px]"
+                : "text-[20px] sm:text-[40px] lg:text-[40px]"
+            }`}
+            style={{
+              color: rainbowColors[index % rainbowColors.length],
+              fontFamily: "Times New Roman, serif",
+              margin: "0 2px",
+            }}
+          >
+            {letter}
+          </motion.span>
+        ))}
+      </div>
+      <div>
+        {remainingWords.map((word, index) => (
+          <motion.span
+            key={`${idx}-second-${index}`}
+            className={`${
+              idx === activeImage
+                ? "text-[20px] sm:text-[100px] lg:text-[100px]"
+                : "text-[10px] sm:text-[40px] lg:text-[50px]"
+            }`}
+            style={{
+              color: getRandomColor(),
+              fontFamily: "Times New Roman, serif",
+              margin: "0 0 sm:0 4px lg:0 8px",
+            }}
+            animate={{ color: getRandomColor() }}
+            transition={{ duration: 2, repeat: Infinity, repeatType: "mirror" }}
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 const Description = ({ activeImage, clickNext, clickPrev }) => {
   return (
     <div className="relative w-full">
-      <div className="absolute -top-4 -left-4 lg:left-0  z-50 p-4 logo">
+      <div className="absolute -top-4 -left-4 lg:left-0 z-50 p-4 logo">
         <Image
           src="/rainbowlogo.jpg"
           alt="Logo"
@@ -56,12 +99,11 @@ const Description = ({ activeImage, clickNext, clickPrev }) => {
                 alt=""
                 layout="fill"
                 objectFit="cover"
-
                 quality={100} // Adjust image quality if necessary
               />
             </div>
 
-            <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center text-blue-200 px-6">
+            <div className="absolute -top-4 left-0 w-full h-full flex flex-col justify-center items-center text-center font-semibold text-pink-600 px-6">
               <motion.div
                 initial={{
                   opacity: idx === activeImage ? 0 : 0.5,
@@ -83,11 +125,11 @@ const Description = ({ activeImage, clickNext, clickPrev }) => {
                   alignItems: "center",
                 }}
               >
-                <div className="mt-24 lg:mt-72 text-3xl lg:text-[50px]  font-extrabold">
-                  {getColoredTitle(elem.title)}
+                <div className="mt-24 lg:mt-72 text-4xl sm:text-5xl lg:text-7xl font-extrabold">
+                  {getColoredTitle(elem.title, idx, activeImage)}
                 </div>
                 <div className="leading-relaxed font-medium text-base tracking-wide mt-4">
-                  <h2 className="text-blue-950 font-extrabold">{elem.head}</h2>
+                  <h2 className="text-red-950 font-extrabold">{elem.head}</h2>
                   <p>{elem.desc}</p>
                 </div>
               </motion.div>
@@ -124,7 +166,6 @@ const Description = ({ activeImage, clickNext, clickPrev }) => {
 };
 
 export default Description;
-
 
 
 

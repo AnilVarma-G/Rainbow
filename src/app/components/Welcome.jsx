@@ -8,7 +8,7 @@ const Welcome = () => {
           WELCOME
         </h1>
         <p className="mt-4 text-lg text-black text-justify">
-          Welcome to Rainbow Concept School & Play School! We are delighted to have you join our vibrant and nurturing community. At Rainbow, we believe in fostering a love for learning from an early age, providing a safe and stimulating environment where children can explore, discover, and grow. Our dedicated team of educators is committed to delivering a holistic education that balances academic excellence with creativity, play, and social development. Together, we create a rainbow of opportunities for every child to shine brightly. Welcome to a place where imaginations soar and lifelong friendships begin!
+          Welcome to Rainbow Concept School & Play School! Established by SPR Memorial Educational society in 2007 recognized Governament of Telangana State. We are delighted to have you join our vibrant and nurturing community. At Rainbow, we believe in fostering a love for learning from an early age, providing a safe and stimulating environment where children can explore, discover, and grow. Our dedicated team of educators is committed to delivering a holistic education that balances academic excellence with creativity, play, and social development. Together, we create a rainbow of opportunities for every child to shine brightly. Welcome to a place where imaginations soar and lifelong friendships begin!
         </p>
       </div>
     </div>
