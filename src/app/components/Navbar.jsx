@@ -68,8 +68,8 @@ const Navbar = () => {
   }}>
     Rainbow
   </span>
-  <span className="text-blue-500 ml-2 lg:-mb-2 text-2xl lg:text-3xl">Concept</span>
-             <span className="text-green-500 ml-2  lg:-mb-2 text-2xl lg:text-3xl">School</span>
+  <span className="text-blue-500 ml-2 lg:-mb-2 text-xl lg:text-3xl">Concept</span>
+             <span className="text-green-500 ml-2  lg:-mb-2 text-xl lg:text-3xl">School</span>
 </Link>
 
         <div className="mobile-menu block md:hidden">
