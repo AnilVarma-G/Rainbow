@@ -42,9 +42,56 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full border h-20 border-[grey] rounded-sm top-0 left-0 right-0 z-10 bg-pink-200 bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-      <Link href="/" className="flex items-center text-2xl md:text-4xl text-white font-semibold">
+      {/* <Link href="/" className="flex items-center text-2xl md:text-4xl text-white font-semibold">
          <span className="rainbow-text md:-ml-10 -ml-14">Rainbow Concept School</span>
-         </Link>
+         </Link> */}
+         {/* <Link href="/" className="flex items-center text-2xl md:text-5xl overflow-y-hidden text-white font-semibold overflow-x-auto">
+  <span style={{ fontFamily: 'Times New Roman', background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
+    Rainbow
+  </span>
+  <span style={{ fontFamily: 'Times New Roman', background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)', WebkitBackgroundClip: 'text', color: 'transparent', marginLeft: '10px' }}>
+    Concept
+  </span>
+  <span style={{ fontFamily: 'Times New Roman', background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)', WebkitBackgroundClip: 'text', color: 'transparent', marginLeft: '10px' }}>
+    School
+  </span>
+</Link> */}
+
+<Link href="/" className="flex items-center text-2xl md:text-5xl overflow-y-hidden text-white font-semibold overflow-x-hidden">
+  <span style={{
+    fontFamily: 'Times New Roman',
+    background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)',
+    WebkitBackgroundClip: 'text',
+    color: 'transparent',
+    display: 'inline-block',
+    animation: 'scroll 3s linear infinite'
+  }}>
+    Rainbow
+  </span>
+  <span style={{
+    fontFamily: 'Times New Roman',
+    background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)',
+    WebkitBackgroundClip: 'text',
+    color: 'transparent',
+    marginLeft: '10px',
+    display: 'inline-block',
+    animation: 'scroll 3s linear infinite'
+  }}>
+    Concept
+  </span>
+  <span style={{
+    fontFamily: 'Times New Roman',
+    background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)',
+    WebkitBackgroundClip: 'text',
+    color: 'transparent',
+    marginLeft: '10px',
+    display: 'inline-block',
+    animation: 'scroll 3s linear infinite'
+  }}>
+    School
+  </span>
+</Link>
+
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
