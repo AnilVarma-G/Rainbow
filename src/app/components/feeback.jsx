@@ -134,9 +134,9 @@ const FeedbackList = () => {
       name: "Rajulapati Manusha",
     },
     {
-      text: "Rainbow concept & play school is one of the best school.and study,cultur activies,any programe's conducting very well and my childrens are issue the study ing very good & childrens to teachers very caring any things very naice and thankyou for all stop members . This is my opinion",
+      text: "Rainbow concept & play school is one of the best school.and study,cultur activies,any programe's conducting very well and my childrens are issue the study ing very good & childrens to teachers very caring any things very naice and thankyou for all stop members.",
       imageUrl: "/image9.jpg",
-      name: "Mangali Sravani",
+      name: "M.Sravani",
     },
     {
       text: "I love this school!  My daughter has improved a lot with their practical approach. Thanks a lot to Rainbow Concept School for encouraging our kids to think creatively and helping them succeed in society ❤️",
@@ -193,7 +193,7 @@ const FeedbackList = () => {
                 {/* <div className="profile-picture w-20 h-20 overflow-hidden rounded-full mb-4">
                   <img src={feedback.imageUrl} alt="Profile" className="w-full h-full object-cover rounded-full" />
                 </div> */}
-                <p className="feedback-name text-center text-sm font-extrabold overflow-y-hidden mt-2">{feedback.name}</p>
+                <p className="feedback-name text-center text-sm font-extrabold overflow-y-hidden mt-2 mb-1">{feedback.name}</p>
                 <p className="feedback-text text-center text-sm overflow-auto overflow-y-hidden">{feedback.text}</p>
               </div>
             ))}
