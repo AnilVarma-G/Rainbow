@@ -217,7 +217,7 @@ const Navbar = () => {
     <nav className="fixed w-full border lg:h-24  h-20 rounded-sm top-0 left-0 right-0 z-10 bg-pink-200 bg-opacity-100">
       <div className="container flex flex-wrap items-center justify-between mx-auto px-4 py-2 lg:py-4">
         <div className="flex items-center justify-between w-full md:w-auto">
-          <Link href="/" className="flex items-center text-xl md:text-4xl lg:text-5xl font-semibold overflow-hidden">
+          <Link href="/" className="flex items-center text-[15px] md:text-4xl lg:text-5xl font-semibold overflow-hidden">
             <span
               className="rainbow-text"
               style={{
