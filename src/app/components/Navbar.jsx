@@ -169,9 +169,6 @@
 
 
 
-
-
-
 'use client';
 import Link from "next/link";
 import React, { useState } from "react";
@@ -214,32 +211,40 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full border lg:h-24  h-20 rounded-sm top-0 left-0 right-0 z-10 bg-pink-200 bg-opacity-100">
+    <nav className="fixed w-full border lg:h-24 h-20 rounded-sm top-0 left-0 right-0 z-10 bg-pink-200 bg-opacity-100">
       <div className="container flex flex-wrap items-center justify-between mx-auto px-4 py-2 lg:py-4">
-        <div className="flex items-center justify-between w-full md:w-auto">
-          <Link href="/" className="flex items-center text-[15px] md:text-4xl lg:text-5xl font-semibold overflow-hidden">
-            <span
-              className="rainbow-text"
-              style={{
-                fontFamily: 'Times New Roman',
-                background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)',
-                WebkitBackgroundClip: 'text',
-                color: 'transparent',
-                display: 'inline-block',
-                whiteSpace: 'nowrap',
-                animation: 'scroll 3s linear infinite'
-              }}
-            >
-              RAINBOW
-            </span>
-            <span className="text-blue-900 ml-2  lg:text-4xl" style={{ fontFamily: 'Times New Roman' }}>
-              CONCEPT
-            </span>
-            <span className="text-blue-900 ml-2  lg:text-4xl" style={{ fontFamily: 'Times New Roman' }}>
-              SCHOOL
-            </span>
-          </Link>
-
+        <Link href="/" className="flex items-center text-[15px] md:text-4xl lg:text-5xl font-semibold overflow-hidden">
+          <span
+            className="rainbow-text"
+            style={{
+              fontFamily: 'Times New Roman',
+              background: 'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)',
+              WebkitBackgroundClip: 'text',
+              color: 'transparent',
+              display: 'inline-block',
+              whiteSpace: 'nowrap',
+              animation: 'scroll 3s linear infinite'
+            }}
+          >
+            RAINBOW
+          </span>
+          <span className="text-blue-900 ml-2 lg:text-4xl" style={{ fontFamily: 'Times New Roman' }}>
+            CONCEPT
+          </span>
+          <span className="text-blue-900 ml-2 lg:text-4xl" style={{ fontFamily: 'Times New Roman' }}>
+            SCHOOL
+          </span>
+        </Link>
+        <div className="flex items-center">
+          <div className="hidden md:flex md:items-center md:w-auto" id="navbar">
+            <ul className="flex p-4 md:p-0 -mr-10 md:flex-row md:space-x-8 ">
+              {navLinks.map((link, index) => (
+                <li key={index}>
+                  <NavLink href={link.path} title={link.title} />
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className="mobile-menu block md:hidden">
             {!navbarOpen ? (
               <button
@@ -257,16 +262,6 @@ const Navbar = () => {
               </button>
             )}
           </div>
-        </div>
-
-        <div className="hidden md:flex md:items-center md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 -mr-10 md:flex-row md:space-x-8 font-bold">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink href={link.path} title={link.title} />
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
