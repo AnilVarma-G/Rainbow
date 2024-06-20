@@ -46,7 +46,7 @@ const Founder = () => {
       </p>
       <div className="flex flex-wrap justify-center items-start">
         {images.map((image, index) => (
-          <div key={index} className="m-2 w-96 relative">
+          <div key={index} className="m-2 w-[380px] relative">
             <div
               className={`relative h-[500px] rounded-md overflow-hidden ${image.color} shadow-lg transition-transform duration-300 transform hover:scale-105`}
             >
