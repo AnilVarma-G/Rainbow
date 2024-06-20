@@ -33,7 +33,7 @@ const Founder = () => {
       </blockquote>
       <p className="mb-8 text-justify">
         Rainbow Concept School & Play School, founded by visionary leaders, is
-        guided by <span className="capitalize">Dr. Sudha Rani</span>, Chairperson, whose dedication and deep
+        guided by <span className="capitalize">D. Sudha Rani</span>, Chairperson, whose dedication and deep
         community values ensure the institution's commitment to quality
         education and holistic development. Dr. MD Misbah Uddin, Managing
         Director, upholds the school's highest standards with a relentless
@@ -46,7 +46,7 @@ const Founder = () => {
       </p>
       <div className="flex flex-wrap justify-center items-start">
         {images.map((image, index) => (
-          <div key={index} className="m-2 w-80 relative">
+          <div key={index} className="m-2 w-[400px] relative">
             <div
               className={`relative h-[500px] rounded-md overflow-hidden ${image.color} shadow-lg transition-transform duration-300 transform hover:scale-105`}
             >
@@ -58,7 +58,7 @@ const Founder = () => {
                 objectPosition="center top"
                 className="rounded-md"
               />
-              <div className="absolute inset-0 bg-yellow-100 opacity-0 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-yellow-100 opacity-0 transition-opacity duration-300 "></div>
             </div>
             <p className="text-black mt-2 font-semibold text-center relative z-10 hover:text-xl hover:text-blue-900">
               <span className="relative whitespace-pre-wrap">{image.name}</span>
