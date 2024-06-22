@@ -204,7 +204,7 @@ const getColoredTitle = (title, idx, activeImage) => {
 const Description = ({ activeImage, clickNext, clickPrev }) => {
   return (
     <div className="relative w-full h-[50vh] sm:h-[100vh] overflow-hidden">
-      <div className="absolute -top-4 -left-4  lg:left-0 z-50 p-4 logo">
+      {/* <div className="absolute -top-4 -left-4  lg:left-0 z-50 p-4 logo">
         <Image
           src="/rainbowlogo.jpg"
           alt="Logo"
@@ -212,7 +212,18 @@ const Description = ({ activeImage, clickNext, clickPrev }) => {
           height={150}
           style={{ borderRadius: "100%" }}
         />
-      </div>
+      </div> */}
+      <div className="absolute -top-4 -left-4 lg:left-0 z-50 p-4 logo">
+  <Image
+    src="/rainbowlogo.jpg"
+    alt="Logo"
+    className="logo-image"
+    width={150}
+    height={150}
+    style={{ borderRadius: "100%" }}
+  />
+</div>
+
 
       {images.map((elem, idx) => (
         <div
