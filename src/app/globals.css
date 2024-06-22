@@ -271,8 +271,8 @@
 /* Adjust logo size for mobile view */
 @media (max-width: 768px) {
   .logo-image {
-    width: 80px; /* Adjust the size as needed */
-    height: 80px; /* Adjust the size as needed */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
   }
 }
 
