@@ -81,7 +81,7 @@ const Founder = () => {
       color: "",
     },
     {
-      src: "/chairperso.jpeg",
+      src: "/cc2.jpeg",
       name: "Dr.MD MISBAH UDDIN\nManaging Director",
       color: "bg-purple-200",
     },
