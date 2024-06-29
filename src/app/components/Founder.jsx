@@ -1,4 +1,3 @@
-
 // import React from "react";
 // import Image from "next/image";
 
@@ -10,13 +9,13 @@
 //       color: "bg-blue-200",
 //     },
 //     {
-//       src: "/chairperson3.jpg",
+//       src: "/chairperso.jpeg",
 //       name: "Dr.MD MISBAH UDDIN\nManaging Director",
 //       color: "bg-purple-200",
 //     },
 //     {
-//       src: "/chairperson2.jpg",
-//       name: "Dr. S SAMEER AL-HUSSAINI \nAcademic Director",
+//       src: "/ccc.jpeg",
+//       name: "Dr. S SAMEER AL-HUSSAINI\nAcademic Director",
 //       color: "bg-green-200",
 //     },
 //   ];
@@ -27,8 +26,7 @@
 //         Founding Members
 //       </h1>
 //       <blockquote className="italic text-lg mb-4">
-//         "Education is not about the learning of facts but the training of minds
-//         to think"
+//         "Education is not about the learning of facts but the training of minds to think"
 //       </blockquote>
 //       <p className="mb-8 text-justify">
 //         Rainbow Concept School & Play School, founded by visionary leaders, is
@@ -45,15 +43,15 @@
 //       </p>
 //       <div className="flex flex-wrap justify-center items-start md:flex-nowrap">
 //         {images.map((image, index) => (
-//           <div key={index} className="m-2 w-full lg:w-[500px] sm:w-96 md:w-96 relative">
+//           <div key={index} className="m-2 w-full sm:w-96 md:w-1/3 relative">
 //             <div
-//               className={`relative h-96 sm:h-[500px] md:h-[600px] rounded-md overflow-hidden ${image.color} shadow-lg transition-transform duration-300 transform hover:scale-105`}
+//               className={`relative h-96 sm:h-96 md:h-96 lg:h-96 rounded-md overflow-hidden ${image.color} shadow-lg transition-transform duration-300 transform hover:scale-105`}
 //             >
 //               <Image
 //                 src={image.src}
 //                 alt={image.name}
 //                 layout="fill"
-//                 objectFit="cover"
+//                 objectFit="contain"
 //                 objectPosition="center"
 //                 className="rounded-md"
 //               />
@@ -72,8 +70,6 @@
 // export default Founder;
 
 
-
-
 import React from "react";
 import Image from "next/image";
 
@@ -82,17 +78,17 @@ const Founder = () => {
     {
       src: "/chairperson.jpg",
       name: "D.SUDHA RANI\nChairperson",
-      color: "bg-blue-200",
+      color: "",
     },
     {
-      src: "/chairperson3.jpg",
+      src: "/chairperso.jpeg",
       name: "Dr.MD MISBAH UDDIN\nManaging Director",
       color: "bg-purple-200",
     },
     {
-      src: "/chairperson2.jpg",
+      src: "/ccc.jpeg",
       name: "Dr. S SAMEER AL-HUSSAINI\nAcademic Director",
-      color: "bg-green-200",
+      color: "",
     },
   ];
 
@@ -119,9 +115,16 @@ const Founder = () => {
       </p>
       <div className="flex flex-wrap justify-center items-start md:flex-nowrap">
         {images.map((image, index) => (
-          <div key={index} className="m-2 w-full sm:w-96 md:w-1/3 relative">
+          <div
+            key={index}
+            className={`relative w-full sm:w-96 md:w-1/3 ${
+              index === 1 ? 'm-0' : 'm-2'
+            }`}
+          >
             <div
-              className={`relative h-[350px] sm:h-[400px] md:h-[500px] rounded-md overflow-hidden ${image.color} shadow-lg transition-transform duration-300 transform hover:scale-105`}
+              className={`relative h-96 rounded-md overflow-hidden ${
+                index === 1 ? image.color : ''
+              } shadow-lg transition-transform duration-300 transform hover:scale-105`}
             >
               <Image
                 src={image.src}
@@ -131,7 +134,7 @@ const Founder = () => {
                 objectPosition="center"
                 className="rounded-md"
               />
-              <div className="absolute inset-0 bg-yellow-100 opacity-0 transition-opacity duration-300"></div>
+              <div className="absolute inset-0  opacity-0 transition-opacity duration-300"></div>
             </div>
             <p className="text-black mt-2 font-semibold text-center relative z-10 hover:text-xl hover:text-blue-900">
               <span className="relative whitespace-pre-wrap">{image.name}</span>
@@ -144,3 +147,4 @@ const Founder = () => {
 };
 
 export default Founder;
+
